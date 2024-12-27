@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+
+.work-page{
+  background-color: #dadbdc;
+  height: 100%;
+  /* width: 100%; */
+  padding: 20px;
+  left: 250px;
+  margin-left: 250px;
+}
+
+.container{
+  background-color: white;
+  border-radius: 7px;
+  /* padding: 16px; */
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.header {
+  /* position: sticky; */
+  top: 0;
+  margin-left: 250px;
+  /* z-index: 20; */
+  background-color: white; 
+}
+
+
+.scroll-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  /* background-color: rgba(0, 0, 0, 0.3);  */
+  background-color: rgba(255, 255, 255, 0.855);
+  border-radius: 3px; 
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: rgba(255, 255, 255, 0.855);
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
